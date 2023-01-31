@@ -1,0 +1,52 @@
+.tasksBlock {
+    padding: 24px 32px 24px 24px;
+    margin-bottom: 32px;
+    border-radius: 25px;
+    background-color: #282828;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (max-width: 480px) {
+    .tasksBlock {
+        padding: 16px 24px 16px 16px;
+    }
+}
+
+.tasksBlockHeader {
+    display: grid;
+    grid-template-columns: 5px 1fr 24px;
+    column-gap: 16px;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.tasksBlockHeader__decor {
+    width: 100%;
+    height: 100%;
+    background-color: #A9A9A9;
+    border-radius: 3px;
+}
+
+.tasksBlockHeader__title {
+    font-family: 'Actor', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--text-color)
+}
+
+.tasksBlockHeader__expand {
+    width: 24px;
+    height: 24px;
+    background-image: url('assets/icons/expand-icon.svg');
+    background-size: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.tasksBlockHeader__expand_expanded {
+    transform: rotate(180deg);
+}
+
+.collapse__wrapperInner {
+    margin-top: 16px;
+}

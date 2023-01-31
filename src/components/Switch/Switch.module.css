@@ -1,0 +1,40 @@
+.root {
+    height: 30px;
+    padding: 0;
+}
+
+.switchBase {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.track {
+    width: 50px;
+    border-radius: 20px;
+    background-color: #366EFF;
+    opacity: 1;
+}
+
+.thumb {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+.checked + .track {
+    background-color: #10C200 !important;
+    opacity: 1 !important;
+}
+
+.thumb {
+    color: #F4F4F4;
+    background-image: url('assets/icons/unchecked-thumb-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+}
+
+.checked .thumb {
+    background-image: url('assets/icons/checked-thumb-icon.svg');
+    background-size: 14px 11px;
+}

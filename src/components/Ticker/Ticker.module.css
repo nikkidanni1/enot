@@ -1,0 +1,27 @@
+.ticker {
+    display: inline-block;
+    padding: 4px 8px;
+    color: var(--text-color);
+    white-space: nowrap;
+    animation-name: ticker;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(100vw)
+}
+
+.ticker__wrapper {
+    overflow: hidden;
+    position: fixed;
+    bottom: 8px;
+    width: 100%;
+    background-color: rgba(40,40,40,.45);
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate(100vw)
+    }
+    100% {
+        transform: translate(-100%)
+    }
+}

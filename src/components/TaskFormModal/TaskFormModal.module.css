@@ -1,0 +1,49 @@
+.taskFormModal {
+    width: 600px;
+    border-radius: 25px;
+    background: #282828;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+}
+
+.taskFormModal__title {
+    font-family: 'Actor', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.taskFormModal__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+.taskFormModal__actions {
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+@media screen and (max-width: 480px) {
+    .taskFormModal__delete {
+        grid-row: 2;
+    }
+
+    .taskFormModal__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+    }
+}
+
+.taskFormModal__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .taskFormModal__buttons {
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+    }
+}
