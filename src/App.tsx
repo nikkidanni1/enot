@@ -238,7 +238,7 @@ function App() {
           <OtherTasks />
         </Box>
         <TaskFormModal />
-        {(isSuccess && isShownNews) && <Ticker news={data.articles[0].summary}/>}
+        {(isSuccess && isShownNews && data) && <Ticker news={data?.[0]?.summary ?? data?.[0]?.title}/>}
       </ThemeProvider>
     </Context.Provider>
   );
